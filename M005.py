@@ -60,7 +60,7 @@ zahlen = [1, 2, 3, 4, 5]
 for x in zahlen:
 	print(x)
 
-# Andere Listentypen: set, list, tuple, dict, range, str
+# Andere Listentypen: list, tuple, set, dict, range, str
 text = "Hallo Welt"
 for z in text:
 	print(z)
@@ -68,3 +68,20 @@ for z in text:
 # Schleife mit einer Range
 for r in range(10):  # for (i = 0; i < 10; i++)
 	print(r)
+
+# Verschachtelte Schleife
+for x in range(5):  # Für jeden Durchlauf der äußeren Schleife wird die innere Schleife vollständig ausgeführt
+	for y in range(5):  # für 1x außen, 5x innen
+		print("Tag " + str(x) + ": " + "Zwiebel " + str(y) + " geschnitten")
+
+#############################################################
+
+# fstring
+# Code in Strings einbetten
+zahl = 5
+print("Die Zahl ist: " + str(zahl))
+print(f"Die Zahl ist: {zahl}")
+
+for x in range(5):
+	for y in range(5):
+		print(f"Tag {x}: Zwiebel {y} geschnitten")
