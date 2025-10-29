@@ -1,7 +1,5 @@
 # List Comprehension
 # Kurzschreibweise zur Erstellung von Listen
-from selectors import SelectSelector
-
 zahlen = []
 for x in range(10):
 	zahlen.append(x)
