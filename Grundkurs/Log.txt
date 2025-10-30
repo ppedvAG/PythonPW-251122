@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "C:\Users\lk3\source\repos\Python_Grundkurs_2025_10_27\M011.py", line 39, in <module>
+    raise SystemError("Hallo")
+SystemError: Hallo
+Traceback (most recent call last):
+  File "C:\Users\lk3\source\repos\Python_Grundkurs_2025_10_27\M011.py", line 39, in <module>
+    raise SystemError("Hallo")
+SystemError: Hallo
