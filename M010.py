@@ -55,3 +55,41 @@ p2.charakter = []
 
 printPerson(p)
 printPerson(p2)
+
+# Verbesserung Person Klasse
+
+class PersonCool:
+	"""
+	Verbesserung Person Klasse
+	"""
+	def __init__(self, hoehe: int, haarfarbe: str, geschlecht: str, vorname: str, nachname: str, charakter: list):
+		"""
+		Wird ausgeführt, wenn die Person erzeugt wird
+
+		:param hoehe: Die Körpergröße
+		:param haarfarbe: Die Haarfarbe
+		:param geschlecht: Das Geschlecht
+		:param vorname: Der Vorname
+		:param nachname: Der Nachname
+		:param charakter: Die Charaktereigenschaften
+		"""
+		self.hoehe = hoehe
+		self.haarfarbe = haarfarbe
+		self.geschlecht = geschlecht
+		self.vorname = vorname
+		self.nachname = nachname
+		self.charakter = charakter
+
+	def bewegen(self, distanz: int):
+		"""
+		Über self kann das Objekt angegriffen werden, welches bewegen verwenden möchte
+		"""
+		print(f"{self.vorname} {self.nachname} bewegt sich um {distanz}m.")
+
+# Direktes Befüllen der Werte möglich
+pc = PersonCool(180, "Blond", "M", "Max", "Mustermann", ["...", "...", "..."])
+pc2 = PersonCool(175, "Schwarz", "W", "Anna", "Musterfrau", [])
+
+# Um bewegen auszuführen, muss ein Objekt vorliegen
+pc.bewegen(10)
+pc2.bewegen(10)
